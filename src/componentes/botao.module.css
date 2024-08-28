@@ -1,0 +1,27 @@
+.botao {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--oliva);
+  border-radius: 12px;
+  border: 1px solid var(--oliva);
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.botao:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+.botaoPequeno {
+  width: 45px;
+  height: 45px;
+  font-size: 11px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
