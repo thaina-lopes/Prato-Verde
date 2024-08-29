@@ -1,20 +1,23 @@
-import styles from "./app.module.css";
-import logo from "../imagens/cogumelo.png";
-import Botao from "../componentes/botao";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function App() {
+import styles from "./login.module.css";
+import logo from "../../imagens/cogumelo.png";
+import Botao from "../../componentes/botao";
+
+export default function Login() {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
+  const navigate = useNavigate();
 
   // Função de validação para habilitar o botão de login
   const isFormValid = usuario.trim() !== "" && senha.length > 5;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    localStorage.setItem("user", usuario);
+    navigate("/home");
   };
-
-  localStorage.setItem("user", usuario);
 
   return (
     <div className={styles.login}>

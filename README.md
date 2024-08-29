@@ -17,16 +17,17 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 - Acessar o perfil do usuário com as receitas favoritas;
 
 ## :memo: Etapas do projeto
+
 > [!IMPORTANT]
-`Clique na seta para ver a lista de cada etapa.`
+> `Clique na seta para ver a lista de cada etapa.`
 
 <details>
   <summary> <b>Tela de Login</b></summary>
   
 1. [x] Desenvolver a tela de formulário com input de nome, e-mail, senha e botão de login.
-2. [ ] O botão do formulário só ser habilitado após um nome de usuário e uma senha com mais de 6 caracteres serem preenchidos.
-3. [ ] Após a submissão do formulário, salve no localStorage o nome do usuário na chave `user`.
-4. [ ] Redirecionar o usuário para a tela principal de receitas após a submissão e validação com sucesso do login.
+2. [x] O botão do formulário só deve ser habilitado após um nome de usuário e uma senha com 6 caracteres ou mais serem preenchidos.
+3. [x] Após a submissão do formulário, salve no localStorage o nome do usuário na chave `user`.
+4. [x] Redirecionar o usuário para a tela principal de receitas após a submissão e validação com sucesso do login.
 
 </details>
 <details>
@@ -74,23 +75,29 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 </details>
 
 ## :computer: Rodando o projeto
+
 Para rodar o repositório é necessário clonar o mesmo e dar o seguinte comando para iniciar o projeto:
 
 - Clone o repositório:
+
 ```bash
 git clone https://github.com/thaina-lopes/prato-verde.git
 ```
 
 - Entre no arquivo do projeto
+
 ```bash
 cd Prato-Verde
 ```
+
 - Instale as dependências
+
 ```bash
 npm install
 ```
 
 - Inicialize o projeto
+
 ```bash
 npm start
 ```
