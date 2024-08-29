@@ -7,13 +7,11 @@ export default function App() {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
 
+  // Função de validação para habilitar o botão de login
+  const isFormValid = usuario.trim() !== "" && senha.length > 5;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!usuario || !senha) {
-      alert("Os campos de usuário e senha precisam der preenchidos");
-      return;
-    }
   };
 
   return (
@@ -27,23 +25,25 @@ export default function App() {
         <h1 className={styles.titulo}>PRATO VERDE</h1>
         <form onSubmit={handleSubmit} className={styles.formulario}>
           <label className={styles.input}>
-            Nome de usuário
             <input
               type="text"
               value={usuario}
               onChange={(e) => setUsuario(e.target.value)}
+              placeholder="Nome de usuário"
             />
           </label>
           <label className={styles.input}>
-            Senha
             <input
               type="password"
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
+              placeholder="Senha"
             />
           </label>
           <div className={styles.botaoContainer}>
-            <Botao type="submit">Login</Botao>
+            <Botao type="submit" disabled={!isFormValid}>
+              Login
+            </Botao>
           </div>
         </form>
       </div>

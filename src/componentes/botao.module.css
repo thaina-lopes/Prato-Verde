@@ -3,16 +3,16 @@
   height: 40px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--oliva);
+  color: var(--branco);
   border-radius: 12px;
-  border: 1px solid var(--oliva);
-  background-color: transparent;
+  background-color: #485333;
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
+  border: none;
 }
-.botao:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  font-weight: 600;
+.botao:disabled {
+  background-color: #373d2a;
+  color: var(--cinza);
+  opacity: 0.6;
 }
 .botaoPequeno {
   width: 45px;

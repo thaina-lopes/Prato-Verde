@@ -28,11 +28,6 @@
   font-weight: 500;
   letter-spacing: -1px;
 }
-.input {
-  color: var(--oliva);
-  font-size: 18px;
-  font-weight: 500;
-}
 .input input {
   display: flex;
   width: 230px;
@@ -44,11 +39,12 @@
   margin-bottom: 20px;
 }
 .input input:focus {
-  border-bottom: 1px solid #999; /* Mantém a linha ao focar */
+  border-bottom: 1px solid var(--oliva); /* Mantém a linha ao focar */
   outline: none;
 }
 .input input::placeholder {
-  color: var(--cinza);
+  color: var(--oliva);
+  font-size: 15px;
 }
 .botaoContainer {
   display: flex;
