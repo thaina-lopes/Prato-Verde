@@ -24,7 +24,7 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
   <summary> <b>Tela de Login</b></summary>
   
 1. [x] Desenvolver a tela de formulário com input de nome, e-mail, senha e botão de login.
-2. [ ] Desenvolver a tela de maneira que o formulário só seja válido após um email válido e uma senha de mais de 6 caracteres serem preenchidos.
+2. [ ] O botão do formulário só ser habilitado após um nome de usuário e uma senha com mais de 6 caracteres serem preenchidos.
 3. [ ] Após a submissão do formulário, salve no localStorage o nome do usuário na chave `user`.
 4. [ ] Redirecionar o usuário para a tela principal de receitas após a submissão e validação com sucesso do login.
 
