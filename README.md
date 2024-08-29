@@ -78,7 +78,7 @@ Para rodar o repositório é necessário clonar o mesmo e dar o seguinte comando
 
 - Clone o repositório:
 ```bash
-git clone https://github.com/thaina-lopes/Prato-Verde.git
+git clone https://github.com/thaina-lopes/prato-verde.git
 ```
 
 - Entre no arquivo do projeto
