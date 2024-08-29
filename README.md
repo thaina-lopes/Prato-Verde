@@ -18,8 +18,7 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 
 ## :memo: Etapas do projeto
 
-> [!IMPORTANT]
-> `Clique na seta para ver a lista de cada etapa.`
+> [!IMPORTANT] > `Clique na seta para ver a lista de cada etapa.`
 
 <details>
   <summary> <b>Tela de Login</b></summary>
@@ -33,18 +32,17 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 <details>
   <summary> <b>Tela principal de receitas</b> </summary>
   
-1. [ ] Implementar o header de acordo com a necessidade de cada tela.
-2. [ ] Implementar os botões de categoria para serem utilizados como filtro.
-3. [ ] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
-4. [ ] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
-5. [ ] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
-6. [ ] Desenvolver o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la.
-7. [ ] Implementar 2 radio buttons na barra de busca: Ingrediente e Nome da receita.
-8. [ ] Caso a busca retorne mais de uma receita, renderize as 6 primeiras encontradas, exibindo a imagem e o nome de cada uma.
-9. [ ] Implementar o menu superior posicionando-o de forma fixa e contendo os ícones de menu.
-10. [ ] Redirecionar a pessoa usuária para a tela correta ao clicar em cada ícone no menu.
-11. [ ] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
-12. [ ] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
+1. [ ] Implementar o header posicionando-o de forma fixa e contendo os ícones de menu.
+2. [ ] Redirecionar o usuário para a tela correta ao clicar em cada ícone no menu.
+3. [ ] Implementar os botões de categoria para serem utilizados como filtro.
+4. [ ] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
+5. [ ] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
+6. [ ] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
+7. [ ] Desenvolver o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la.
+8. [ ] Implementar 2 radio buttons na barra de busca: Ingrediente e Nome da receita.
+9. [ ] Caso a busca retorne mais de uma receita, renderize as 6 primeiras encontradas, exibindo a imagem e o nome de cada uma.
+10. [ ] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
+11. [ ] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
    
 </details>
 <details>
