@@ -14,6 +14,8 @@ export default function App() {
     e.preventDefault();
   };
 
+  localStorage.setItem("user", usuario);
+
   return (
     <div className={styles.login}>
       <div className={styles.loginContainer}>
