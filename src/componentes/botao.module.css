@@ -13,6 +13,7 @@
   background-color: #373d2a;
   color: var(--cinza);
   opacity: 0.6;
+  pointer-events: none;
 }
 .botaoPequeno {
   width: 45px;
