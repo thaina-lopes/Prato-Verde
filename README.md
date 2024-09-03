@@ -33,8 +33,8 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 <details>
   <summary> <b>Tela principal de receitas</b> </summary>
   
-1. [ ] Implementar o header posicionando-o de forma fixa e contendo os ícones de menu.
-2. [ ] Redirecionar o usuário para a tela correta ao clicar em cada ícone no menu.
+1. [x] Implementar o header posicionando-o de forma fixa e contendo os ícones de menu.
+2. [x] Redirecionar o usuário para a tela correta ao clicar em cada ícone no menu.
 3. [ ] Implementar os botões de categoria para serem utilizados como filtro.
 4. [ ] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
 5. [ ] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
