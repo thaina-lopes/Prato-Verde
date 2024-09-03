@@ -22,35 +22,37 @@ export default function Login() {
   return (
     <div className={styles.login}>
       <div className={styles.loginContainer}>
-        <img
-          src={logo}
-          alt="Logo de um prato com garfo e faca"
-          className={styles.logo}
-        />
-        <h1 className={styles.titulo}>PRATO VERDE</h1>
-        <form onSubmit={handleSubmit} className={styles.formulario}>
-          <label className={styles.input}>
-            <input
-              type="text"
-              value={usuario}
-              onChange={(e) => setUsuario(e.target.value)}
-              placeholder="Nome de usuário"
-            />
-          </label>
-          <label className={styles.input}>
-            <input
-              type="password"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-              placeholder="Senha"
-            />
-          </label>
-          <div className={styles.botaoContainer}>
-            <Botao type="submit" disabled={!isFormValid}>
-              Login
-            </Botao>
-          </div>
-        </form>
+        <div className={styles.caixa}>
+          <img
+            src={logo}
+            alt="Logo de um prato com garfo e faca"
+            className={styles.logo}
+          />
+          <h1 className={styles.titulo}>PRATO VERDE</h1>
+          <form onSubmit={handleSubmit} className={styles.formulario}>
+            <label className={styles.input}>
+              <input
+                type="text"
+                value={usuario}
+                onChange={(e) => setUsuario(e.target.value)}
+                placeholder="Nome de usuário"
+              />
+            </label>
+            <label className={styles.input}>
+              <input
+                type="password"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+                placeholder="Senha"
+              />
+            </label>
+            <div className={styles.botaoContainer}>
+              <Botao type="submit" disabled={!isFormValid}>
+                Login
+              </Botao>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
