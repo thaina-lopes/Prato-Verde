@@ -18,7 +18,7 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 
 ## :memo: Etapas do projeto
 
-> :warning: > `Clique na seta para ver a lista de cada etapa.`
+> :warning: `Clique na seta para ver a lista de cada etapa.`
 
 <details>
   <summary> <b>Tela de Login</b></summary>
