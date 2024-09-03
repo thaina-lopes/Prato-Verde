@@ -6,7 +6,7 @@
 
 ### App de receitas veganas :fork_and_knife::herb:
 
-O objetivo do projeto é criar um app de receitas onde é possível ver, buscar, favoritar e compartilhar receitas. O layout vai ter como foco inical dispositivos móveis, sendo posteriormente adaptado para telas maiores.
+O objetivo do projeto é criar um app de receitas onde é possível ver, buscar, favoritar e compartilhar receitas. O layout vai ter como foco inical dispositivos móveis, sendo posteriormente adaptado para desktop.
 
 ## :hammer: Funcionalidades
 
@@ -18,16 +18,16 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 
 ## :memo: Etapas do projeto
 
-> [!IMPORTANT]
-> `Clique na seta para ver a lista de cada etapa.`
+> [!IMPORTANT] > `Clique na seta para ver a lista de cada etapa.`
 
 <details>
   <summary> <b>Tela de Login</b></summary>
   
 1. [x] Desenvolver a tela de formulário com input de nome, e-mail, senha e botão de login.
 2. [x] O botão do formulário só deve ser habilitado após um nome de usuário e uma senha com 6 caracteres ou mais serem preenchidos.
-3. [x] Após a submissão do formulário, salve no localStorage o nome do usuário na chave `user`.
+3. [x] Após a submissão do formulário, salvar no localStorage o nome do usuário na chave `user`.
 4. [x] Redirecionar o usuário para a tela principal de receitas após a submissão e validação com sucesso do login.
+5. [x] Implementar responsividade do login.
 
 </details>
 <details>
