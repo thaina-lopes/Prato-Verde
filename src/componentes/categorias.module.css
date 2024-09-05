@@ -1,0 +1,16 @@
+.botoesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 70px;
+}
+.botoes {
+  cursor: pointer;
+  font-family: "Tenor Sans";
+  color: var(--oliva);
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+}
