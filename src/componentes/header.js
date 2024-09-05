@@ -16,11 +16,11 @@ export default function Header() {
       <nav className={styles.menuContainer}>
         <div className={styles.menuItem}>
           <a href="/perfil" aria-label="Ir para o perfil">
-            <RxAvatar aria-hidden="true" />
+            <RxAvatar size={22} aria-hidden="true" />
           </a>
         </div>
         <div className={styles.menuItem}>
-          <a href="/">Prato Verde</a>
+          <a>Prato Verde</a>
         </div>
         <div className={styles.menuItem}>
           <div className={styles.containerBusca}>
