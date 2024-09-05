@@ -36,22 +36,13 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 1. [x] Implementar o header posicionando-o de forma fixa e contendo os ícones de menu.
 2. [x] Redirecionar o usuário para a tela correta ao clicar em cada ícone no menu.
 3. [x] Implementar os botões de categoria para serem utilizados como filtro.
-4. [ ] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
-5. [ ] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
-6. [ ] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
-7. [ ] Desenvolver o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la.
-8. [ ] Implementar 2 radio buttons na barra de busca: Ingrediente e Nome da receita.
-9. [ ] Caso a busca retorne mais de uma receita, renderize as 6 primeiras encontradas, exibindo a imagem e o nome de cada uma.
-10. [ ] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
-11. [ ] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
+4. [x] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
+5. [ ] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
+6. [ ] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
+7. [x] Desenvolver o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la.
+8. [ ] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
+9. [ ] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
    
-</details>
-<details>
-<summary> <b>Tela de detalhes da receita</b> </summary>
-  
-1. [ ] Desenvolver a tela de modo que contenha a imagem da receita, o título, uma lista de ingredientes seguidos pelas quantidades, instruções de preparo e um botão de compartilhar.
-2. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
-
 </details>
 <details>
 <summary> <b>Tela de perfil do usuário</b> </summary>
@@ -64,6 +55,13 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 6. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
 7. [ ] O botão de "desfavoritar" deve remover a receita da lista de receitas favoritas do localStorage e da tela.
 8. [ ] Ao clicar na foto ou no nome da receita, a rota deve mudar para a tela de detalhes daquela receita.
+
+</details>
+<details>
+<summary> <b>Tela de detalhes da receita</b> </summary>
+  
+1. [ ] Desenvolver a tela de modo que contenha a imagem da receita, o título, uma lista de ingredientes seguidos pelas quantidades, instruções de preparo e um botão de compartilhar.
+2. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
 
 </details>
 
