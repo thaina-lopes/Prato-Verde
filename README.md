@@ -54,22 +54,16 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 
 </details>
 <details>
-<summary> <b>Tela de receitas favoritas</b> </summary>
-  
-1. [ ] Possuir a foto da receita, nome, um botão de compartilhar e um de "desfavoritar".
-2. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
-3. [ ] O botão de "desfavoritar" deve remover a receita da lista de receitas favoritas do `localStorage` e da tela.
-4. [ ] Ao clicar na foto ou no nome da receita, a rota deve mudar para a tela de detalhes daquela receita.
-
-</details>
-<details>
 <summary> <b>Tela de perfil do usuário</b> </summary>
   
-1. [ ] Possuir o nome do usuário digitado no login.
-2. [ ] Implementar 3 botões: um de "Receitas favoritas", um de "Início" e um de "Sair".
-3. [ ] Ao clicar no botão de "Receitas favoritas", a rota deve mudar para a tela de receitas favoritas.
-4. [ ] Ao clicar no botão de "Início", a rota deve mudar para a tela de início.
-5. [ ] Ao clicar no botão de "Sair", o localStorage deve ser limpo e a rota deve mudar para a tela de login.
+1. [x] Possuir o nome do usuário digitado no login.
+2. [x] Implementar 2 botões: um de "Início" e um de "Sair".
+3. [x] Ao clicar no botão de "Voltar", a rota deve mudar para a tela de início.
+4. [x] Ao clicar no botão de "Sair", o localStorage deve ser limpo e a rota deve mudar para a tela de login.
+5. [ ] Mostrar "Receitas favoritas" e os cards de cada receita, com o botão de "favorito" preenchido e um botão de compartilhar.
+6. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
+7. [ ] O botão de "desfavoritar" deve remover a receita da lista de receitas favoritas do localStorage e da tela.
+8. [ ] Ao clicar na foto ou no nome da receita, a rota deve mudar para a tela de detalhes daquela receita.
 
 </details>
 
