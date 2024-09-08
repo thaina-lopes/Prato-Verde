@@ -23,11 +23,7 @@ export default function Login() {
     <div className={styles.login}>
       <div className={styles.loginContainer}>
         <div className={styles.caixa}>
-          <img
-            src={logo}
-            alt="Logo de um prato com garfo e faca"
-            className={styles.logo}
-          />
+          <img src={logo} alt="Logo de um cogumelo" className={styles.logo} />
           <h1 className={styles.titulo}>PRATO VERDE</h1>
           <form onSubmit={handleSubmit} className={styles.formulario}>
             <label className={styles.input}>

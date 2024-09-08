@@ -1,13 +1,13 @@
 import { IoIosArrowDropleft } from "react-icons/io";
-import { MdFavorite } from "react-icons/md";
-import { MdFavoriteBorder } from "react-icons/md";
-import { IoIosShareAlt } from "react-icons/io";
 import { RxExit } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
 import styles from "../Perfil/perfil.module.css";
 import avatar from "../../imagens/profile.png";
+import Card from "../../componentes/card";
+import img01 from "../../imagens/rec01.png";
+import img02 from "../../imagens/rec02.png";
 
 export default function Perfil() {
   const navigate = useNavigate();
@@ -43,6 +43,12 @@ export default function Perfil() {
         </p>
       </div>
       <h3 className={styles.receitasTitulo}>Receitas favoritas</h3>
+      <div className={styles.cardContainer}>
+        <Card imagem={img01} titulo="Risoto de Moranga" />
+        <Card imagem={img02} titulo="Torta de bolacha" />
+        <Card imagem={img02} titulo="Torta de bolacha" />
+        <Card imagem={img01} titulo="Risoto de Moranga" />
+      </div>
       <div className={styles.sairContainer}>
         <button className={styles.sair} onClick={sairClick}>
           Sair <RxExit />
