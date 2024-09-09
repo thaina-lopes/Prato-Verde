@@ -1,5 +1,5 @@
 .perfil {
-  padding: 30px;
+  padding: 10px 20px;
 }
 .voltar {
   border: none;
@@ -12,10 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 30px 0;
 }
 .usuario {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Raleway";
   font-weight: 400;
   display: flex;
@@ -26,9 +25,15 @@
   height: 26px;
 }
 .receitasTitulo {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Raleway";
   font-weight: 300;
+}
+.cardContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .sairContainer {
   position: fixed;
@@ -44,9 +49,8 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  text-decoration: none;
-  color: inherit;
   font-size: 16px;
   font-family: "Raleway";
   color: var(--oliva);
+  cursor: pointer;
 }
