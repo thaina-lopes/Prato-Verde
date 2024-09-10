@@ -6,6 +6,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.cardLink {
+  text-decoration: none;
+  color: var(--oliva);
+}
 .card {
   background-color: var(--branco);
   border-radius: 8px;

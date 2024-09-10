@@ -1,7 +1,7 @@
 {
   "receitas": [
     {
-      "id": 1,
+      "id": "1",
       "receita": "Risoto de abóbora cabotiá",
       "ingredientes": "350g de abóbora cabotiá cortada em cubinhos, 5 xícaras de caldo de legumes ou água, 1 cebola pequena picada, 3 dentes de alho picado, 1 xícara e meia de arroz arbóreo,sal a gosto, pimenta moída a gosto, salsinha e cebolinha picadas a gosto",
       "modo_preparo": "Em uma panela, coloque a abóbora cabotiá cortada em cubinhos, cubra com 5 xícaras de caldo de legumes ou água e deixe cozinhar até os pedaços estarem macios. Retire a abóbora cozida com uma escumadeira, coloque em um liquidificador, juntamente com um pouco da água do cozimento e bata até ficar uniforme. Misture este creme com a água da panela (vai virar um caldo amarelo) e reserve. Em uma panela em fogo médio, refogue a cebola e o alho até ficarem levemente dourados. Adicione o arroz arbóreo, tempere com sal a gosto e refogue por um minuto. Adicione uma concha do caldo e mexa até ele evaporar. Continue colocando caldo aos poucos e misturando sempre, até o arroz estar cozido. Desligue, corrija o sal, se necessário, e tempere com pimenta e salsinha e cebolinha a gosto. Se gostar, sirva com cogumelos refogados.",
@@ -9,7 +9,7 @@
       "tipo": "principal"
     },
     {
-      "id": 2,
+      "id": "2",
       "receita": "Torta de bolacha",
       "ingredientes": "2 xícaras de chá de leite vegetal, 6 colheres de sopa de Amido de Milho, 1/4 xícara de chá de açúcar demerara, 1/2 xícara de chá de pasta de amendoim sem açúcar, 1 pacote de biscoito de maisena, 100 gramas chocolate vegano derretido",
       "modo_preparo": "Em uma panela média, coloque o leite vegetal e o amido de milho, misture bem até dissolver. Junte o açúcar e leve ao fogo médio até engrossar. Retire do fogo, junte a pasta de amendoim e misture bem até ficar homogêneo e reserve. Em um recepiente próprio para microondas, coloque o chocolate e leve ao microondas por 30 segundos, retire, de uma mexida com uma colher para ajudar a misturar e derreter e depita o processo até o chocolate derretor por completo. Em uma tigela, coloque um pouco do leite vegetal e mergulhe as bolachas rapidamente. Espalhe um pouco do creme no fundo de uma fôrma e monte a torta alternando camadas do creme com as bolachas umedecidas. Finalize com uma camada do chocolate derretido. Leve a geladeira por no mínimo 4 horas.",
@@ -17,7 +17,7 @@
       "tipo": "doces"
     },
     {
-      "id": 3,
+      "id": "3",
       "receita": "Salpicão de palmito",
       "ingredientes": "1 xícara de grão de bico cozido, 1 cebola roxa pequena, 1 cenoura grande ralada, 1/2 xícara de milho, 1/2 xícara de ervilha , 300g de palmito desfiado, 100g de tofu defumado ralado, 1/2 xícara de castanha de caju, água fervente, 1 colher (chá) de sal, salsinha a gosto, batata palha a gosto",
       "modo_preparo": "Pique a cebola roxa e escalde em água quente por 5 minutos para reduzir a acidez. Escorra bem em água corrente. Deixe a castanha de cajú de molho em água quente por alguns minutos. Em seguida, bata no liquidificador com um pouco de água até obter um creme com a consistência desejada. Tempere com sal a gosto. Em uma tigela grande, adicione o tofu defumado, o palmito, o grão de bico, a cenoura, a cebola roxa, o milho, a ervilha e a salsinha picada. Incorpore o creme de castanha de cajú à mistura, ajustando a quantidade de acordo com sua preferência. Finalize com a batata palha, distribuindo-a por cima para manter a crocância.",
@@ -25,7 +25,7 @@
       "tipo": "principal"
     },
     {
-      "id": 4,
+      "id": "4",
       "receita": "Pão semi integral",
       "ingredientes": "2 xícaras de farinha de trigo branca, 1 xícara de farinha integral, 1 colher (sopa) açúcar demerara, 1 + 1/2 colher (sopa) de fermento biológico seco, 1 colher (chá) de sal, 4 colheres (sopa) óleo de girassol, 1 + 1/4 xícara de água morna",
       "modo_preparo": "Em uma vasilha, misture os ingredientes secos, depois adicione o óleo e a água morna. Vá misturando com a colher e depois mão na massa! Depois que misturar bem, passe para uma bancada enfarinhada e sove por uns 10 minutos, até a massa estiver bem lisa. Coloque de volta na vasilha com um pouco de farinha, cubra e deixe descansar por 1 hora. Corte a massa em pedaços e molde no formato que desejar. Transfira os pães para uma forma enfarinhada (deixe um pouco de espaços entre eles), cubra com um pano e deixe descansar por 1 hora. Pincele um pouco de melado ou néctar de coco, salpique gergelim por cima e leve ao forno pré-aquecido a 180 ºC por cerca de 30 minutos ou até dourar.",

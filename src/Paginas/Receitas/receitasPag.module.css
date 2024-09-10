@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.imagem {
+  width: 80%;
+  text-align: center;
+}
+.tituloContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  font-size: 20px;
+  color: var(--oliva);
+}
+.icones {
+  color: #8e412e;
+}
