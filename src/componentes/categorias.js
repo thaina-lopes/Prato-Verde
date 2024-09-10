@@ -1,7 +1,7 @@
 import styles from "./categorias.module.css";
 
 export default function Categorias() {
-  const categorias = ["Bolos", "Café da manhã", "Lanches", "Massas", "Sopas"];
+  const categorias = ["Doces", "Pães", "Pratos principais", "Sopas"];
 
   return (
     <div className={styles.botoesContainer}>
