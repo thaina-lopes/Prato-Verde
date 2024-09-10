@@ -60,7 +60,7 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 <details>
 <summary> <b>Tela de detalhes da receita</b> </summary>
   
-1. [ ] Desenvolver a tela de modo que contenha a imagem da receita, o título, uma lista de ingredientes seguidos pelas quantidades, instruções de preparo, um botão de favoritar e um botão de compartilhar.
+1. [x] Desenvolver a tela de modo que contenha a imagem da receita, o título, uma lista de ingredientes seguidos pelas quantidades, instruções de preparo, um botão de favoritar e um botão de compartilhar.
 2. [ ] O botão de favoritar deve ser preenchido quando clicado e a receita ser adicionada à lista de receitas favoritas do localStorage e deve aparecer no perfil do usuário em "Receitas favoritas".
 3. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
 

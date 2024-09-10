@@ -1,5 +1,4 @@
 // ReceitasPag.js
-import { MdFavorite } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
 import { IoIosShareAlt } from "react-icons/io";
 import { useParams } from "react-router-dom";
@@ -20,6 +19,8 @@ export default function ReceitasPag() {
 
   if (!receita) return <div>Carregando...</div>;
 
+  const ingredientesLista = receita.ingredientes.split(",");
+
   return (
     <div className={styles.container}>
       <img
@@ -28,18 +29,20 @@ export default function ReceitasPag() {
         className={styles.imagem}
       />
       <div className={styles.tituloContainer}>
-        <h1 className={styles.titulo}>{receita.receita}</h1>
+        <h2 className={styles.titulo}>{receita.receita}</h2>
         <div className={styles.icones}>
-          <MdFavorite />
+          <MdFavoriteBorder />
           <IoIosShareAlt />
         </div>
       </div>
-      <p>
-        <strong>Ingredientes:</strong> {receita.ingredientes}
-      </p>
-      <p>
-        <strong>Modo de Preparo:</strong> {receita.modo_preparo}
-      </p>
+      <h4 className={styles.subTitulo}>Ingredientes:</h4>
+      <ul className={styles.descricao}>
+        {ingredientesLista.map((ingrediente, index) => (
+          <li key={index}>{ingrediente.trim()}</li>
+        ))}
+      </ul>
+      <h4 className={styles.subTitulo}>Modo de Preparo: </h4>
+      <p className={styles.descricao}>{receita.modo_preparo}</p>
     </div>
   );
 }
