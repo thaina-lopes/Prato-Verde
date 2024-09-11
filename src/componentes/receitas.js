@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import styles from "./receitas.module.css";
+import { Link } from "react-router-dom";
 
-export default function Receitas({ imagem, titulo }) {
+export default function Receitas() {
   const [receitas, setReceitas] = useState([]);
 
   useEffect(() => {
@@ -14,17 +15,23 @@ export default function Receitas({ imagem, titulo }) {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.receitasContainer}>
         {receitas.map((receita) => (
-          <div key={receita.id} className={styles.card}>
-            <img
-              src={receita.link_imagem}
-              alt={receita.receita}
-              className={styles.imagem}
-            />
-            <h2 className={styles.titulo}>{receita.receita}</h2>
-          </div>
+          <Link
+            to={`/receitas/${receita.id}`}
+            key={receita.id}
+            className={styles.cardLink}
+          >
+            <div className={styles.card}>
+              <img
+                src={receita.link_imagem}
+                alt={receita.receita}
+                className={styles.imagem}
+              />
+              <h2 className={styles.titulo}>{receita.receita}</h2>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

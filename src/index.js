@@ -13,7 +13,8 @@ import "./index.css";
 import Home from "./Paginas/Home/home.js";
 import Login from "./Paginas/Login/login.js";
 import Perfil from "./Paginas/Perfil/perfil.js";
-import Receitas from "./Paginas/Receitas/receitas.js";
+import Receitas from "./componentes/receitas.js";
+import ReceitasPag from "./Paginas/Receitas/receitasPag.js";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/receitas",
     element: <Receitas />,
+  },
+  {
+    path: "/receitas/:id",
+    element: <ReceitasPag />,
   },
 ]);
 
