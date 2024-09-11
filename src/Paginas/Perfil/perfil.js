@@ -18,15 +18,12 @@ export default function Perfil() {
 
   const sairClick = () => {
     localStorage.removeItem("user");
-
     localStorage.removeItem("favoritas");
-
     navigate("/");
   };
 
   useEffect(() => {
     const usuarioArmazenado = localStorage.getItem("user");
-
     if (usuarioArmazenado) {
       setUsuario(usuarioArmazenado);
     }
@@ -45,6 +42,14 @@ export default function Perfil() {
     };
     fetchFavorites();
   }, []);
+
+  const removerFavorita = (id) => {
+    const novasFavoritas = favoritas.filter((receita) => receita.id !== id);
+    setFavoritas(novasFavoritas);
+
+    const favoritasIds = novasFavoritas.map((receita) => receita.id);
+    localStorage.setItem("favoritas", JSON.stringify(favoritasIds));
+  };
 
   return (
     <div className={styles.perfil}>
@@ -71,7 +76,10 @@ export default function Perfil() {
               <h4 className={styles.titulo}>{receita.receita}</h4>
               {/* ... outros detalhes */}
               <div className={styles.icones}>
-                <MdFavorite />
+                <MdFavorite
+                  onClick={() => removerFavorita(receita.id)}
+                  className={styles.iconeFavorito}
+                />
                 <IoIosShareAlt />
               </div>
             </div>
