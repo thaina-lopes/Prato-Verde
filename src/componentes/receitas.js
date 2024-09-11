@@ -15,7 +15,7 @@ export default function Receitas() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.receitasContainer}>
         {receitas.map((receita) => (
           <Link

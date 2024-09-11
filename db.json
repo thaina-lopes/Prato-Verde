@@ -3,9 +3,9 @@
     {
       "id": "1",
       "receita": "Risoto de abóbora cabotiá",
-      "ingredientes": "350g de abóbora cabotiá cortada em cubinhos, 5 xícaras de caldo de legumes ou água, 1 cebola pequena picada, 3 dentes de alho picado, 1 xícara e meia de arroz arbóreo,sal a gosto, pimenta moída a gosto, salsinha e cebolinha picadas a gosto",
+      "ingredientes": "350g de abóbora cabotiá cortada em cubinhos, 5 xícaras de caldo de legumes ou água, 1 cebola pequena picada, 3 dentes de alho picado, 1 e 1/2 xícara de arroz arbóreo,sal a gosto, pimenta moída a gosto, salsinha e cebolinha picadas a gosto",
       "modo_preparo": "Em uma panela, coloque a abóbora cabotiá cortada em cubinhos, cubra com 5 xícaras de caldo de legumes ou água e deixe cozinhar até os pedaços estarem macios. Retire a abóbora cozida com uma escumadeira, coloque em um liquidificador, juntamente com um pouco da água do cozimento e bata até ficar uniforme. Misture este creme com a água da panela (vai virar um caldo amarelo) e reserve. Em uma panela em fogo médio, refogue a cebola e o alho até ficarem levemente dourados. Adicione o arroz arbóreo, tempere com sal a gosto e refogue por um minuto. Adicione uma concha do caldo e mexa até ele evaporar. Continue colocando caldo aos poucos e misturando sempre, até o arroz estar cozido. Desligue, corrija o sal, se necessário, e tempere com pimenta e salsinha e cebolinha a gosto. Se gostar, sirva com cogumelos refogados.",
-      "link_imagem": "https://www.essentialnutrition.com.br/conteudos/wp-content/uploads/2021/08/risoto-banner-1-750x750.jpg",
+      "link_imagem": "https://lh3.googleusercontent.com/pw/AP1GczNpQ9qbcSRhoQhcYkf7ooTHi7PqrSce0lwFxgzY0XxClIde3pA50OSx0_6G6fe9K0HmMhsCSo22KqJKdR7S09CWqkqUfqDxq0vw-CmI7atFo03i54irgQ6j1_GHx8RuvgHZOeJHeYrb6fz0CWytn53u=w1080-h810-s-no-gm?authuser=0",
       "tipo": "principal"
     },
     {
@@ -27,10 +27,26 @@
     {
       "id": "4",
       "receita": "Pão semi integral",
-      "ingredientes": "2 xícaras de farinha de trigo branca, 1 xícara de farinha integral, 1 colher (sopa) açúcar demerara, 1 + 1/2 colher (sopa) de fermento biológico seco, 1 colher (chá) de sal, 4 colheres (sopa) óleo de girassol, 1 + 1/4 xícara de água morna",
+      "ingredientes": "2 xícaras de farinha de trigo branca, 1 xícara de farinha integral, 1 colher (sopa) açúcar demerara, 1 e 1/2 colher (sopa) de fermento biológico seco, 1 colher (chá) de sal, 4 colheres (sopa) óleo de girassol, 1 e 1/4 xícara de água morna",
       "modo_preparo": "Em uma vasilha, misture os ingredientes secos, depois adicione o óleo e a água morna. Vá misturando com a colher e depois mão na massa! Depois que misturar bem, passe para uma bancada enfarinhada e sove por uns 10 minutos, até a massa estiver bem lisa. Coloque de volta na vasilha com um pouco de farinha, cubra e deixe descansar por 1 hora. Corte a massa em pedaços e molde no formato que desejar. Transfira os pães para uma forma enfarinhada (deixe um pouco de espaços entre eles), cubra com um pano e deixe descansar por 1 hora. Pincele um pouco de melado ou néctar de coco, salpique gergelim por cima e leve ao forno pré-aquecido a 180 ºC por cerca de 30 minutos ou até dourar.",
       "link_imagem": "https://www.receiteria.com.br/wp-content/uploads/pao-de-hamburguer-caseiro-1.jpg",
       "tipo": "pães"
+    },
+    {
+      "id": "5",
+      "receita": "Sopa de ervilha",
+      "ingredientes": "1 e 1/2 xícara de ervilha seca, 3 dentes de alho picados, 1/2 xícara de cebola picada, 1 colher (de chá) de sal, 1 folha de louro, 4 xícaras de caldo de legumes caseiro ou água, 1/2 xícara de salsinha picada, azeite a gosto.",
+      "modo_preparo": "Deixe as ervilhas de molho na água por 12 horas, utilizando uma proporção de 1 parte de ervilha para 3 partes de água. Esse processo não só amolece as ervilhas, mas também auxilia na redução dos fitatos. Em seguida escorra, lave e reserve. Em uma panela de pressão em fogo médio, coloque um fio de óleo e refogue o alho e a cebola até ficarem levemente dourados. Acrescente a ervilha e refogue por cerca de 3 minutos. Tempere com sal, acrescente a folha de louro e adicione o caldo de legumes. Tampe a panela de pressão, abaixe o fogo e deixe cozinhar por cerca de 15 minutos depois que pegar pressão e desligue. Retire a tampa depois que saiu a pressão e veja se as ervilhas estão cozidas. Caso estiverem, adicione a salsinha e cebolinha picadas, regue com um fio de azeite e misture.",
+      "link_imagem": "https://lh3.googleusercontent.com/pw/AP1GczNBZJhxqy85enrp8aICrJbR0Fi_WTgjdjxYvmwAyTwqFAd9xrnJTY8orwdq6ICEs-awr3-I2BCtYFf0e4qatM5bqlv1SS04i_VQjsmP4kbGFfoDK_EOA5qASbwH-Oql8zi-hbm4eFzjsFG9JEpH7tP0=w1080-h720-s-no-gm?authuser=0",
+      "tipo": "pães"
+    },
+    {
+      "id": "6",
+      "receita": "Maionese de aquafaba",
+      "ingredientes": "½ xícara de aquafaba (caldo concentrado do cozimento de grão-de-bico ou água da lata do grão-de-bico), 1 xícara de óleo vegetal neutro, 1 colher (de chá) de vinagre de maçã, 1/4 colher (de chá) de alho em pó (opcional), 1 colher (de chá) de mostarda, sal a gosto (gosto de usar o sal negro para trazer um sabor característico do enxofre)",
+      "modo_preparo": "Adicione todos os ingredientes em um copo de mixer de mão (mixer de imersão). Caso não tenha, use um copo que seja levemente mais largo do que o mixer. Posicione o mixer de mão no fundo do copo, segurando firme. Ligue o mixer e não o mexa por cerca de 40 segundos ou até que a maionese comece a emulsificar. Em seguida, mexa o mixer, de cima para baixo, para misturar bem todos os ingredientes. Ajuste os temperos, se precisar, e sirva em seguida. Pode ser armazenada em um pote fechado, na geladeira, por até 1 semana.",
+      "link_imagem": "https://lh3.googleusercontent.com/pw/AP1GczPdvLpaj7VAwHycpvPAiKJ3AVQStPg-FZ0H56DOWepBrnUkE0g9cUm4EMlgweahBvDtgjVB6_2Ctt1KRxpn_IJ81GDSBU1RTBbrKnZHYdrtMIMp0yZTkGEZclYsKsfsGFA7YulIeBqF2xKSAJNtQ4aV=w800-h630-s-no-gm?authuser=0",
+      "tipo": "principal"
     }
   ]
 }

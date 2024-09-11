@@ -1,11 +1,11 @@
 .headerContainer {
-  position: fixed; /* Mantém o header fixo no topo */
-  top: 0; /* Posiciona o header no topo */
-  left: 0; /* Alinha o header à esquerda */
-  width: 100%; /* Faz o header ocupar a largura total da tela */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px 20px;
   background-color: var(--verdinho);
-  z-index: 1000; /* Coloca o header acima de outros elementos */
+  z-index: 1000;
   box-sizing: border-box;
 }
 .menuContainer {
