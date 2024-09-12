@@ -46,6 +46,7 @@
   padding-bottom: 4px;
   text-align: center;
   overflow: hidden;
+  cursor: pointer;
 }
 .imagem {
   width: 100%;
@@ -74,6 +75,10 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  color: var(--oliva);
+}
+.iconeCopiado {
+  color: #8e412e;
 }
 .sairContainer {
   position: fixed;

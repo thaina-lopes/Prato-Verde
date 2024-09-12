@@ -50,6 +50,20 @@
   color: #8e412e;
   font-size: 20px;
 }
+.botaoCompartilhar {
+  border: none;
+  background-color: transparent;
+  color: #8e412e;
+  font-size: 20px;
+}
+.linkCopiado {
+  color: #8e412ec9;
+  font-size: 13px;
+  display: flex;
+  margin: 0px;
+  margin-right: 5%;
+  align-self: flex-end;
+}
 .subTitulo {
   font-size: 16px;
   color: var(--oliva);
