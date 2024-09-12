@@ -52,9 +52,9 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 3. [x] Ao clicar no botão de "Voltar", a rota deve mudar para a tela de início.
 4. [x] Ao clicar no botão de "Sair", o localStorage deve ser limpo e a rota deve mudar para a tela de login.
 5. [x] Mostrar "Receitas favoritas" e os cards de cada receita, com o botão de "favorito" preenchido e um botão de compartilhar.
-6. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
+6. [x] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
 7. [x] O botão de "desfavoritar" deve remover a receita da lista de receitas favoritas do localStorage e da tela.
-8. [ ] Ao clicar no card da receita, a rota deve mudar para a tela de detalhes daquela receita.
+8. [x] Ao clicar no card da receita, a rota deve mudar para a tela de detalhes daquela receita.
 
 </details>
 <details>
@@ -62,7 +62,7 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
   
 1. [x] Desenvolver a tela de modo que contenha a imagem da receita, o título, uma lista de ingredientes seguidos pelas quantidades, instruções de preparo, um botão de favoritar e um botão de compartilhar.
 2. [x] O botão de favoritar deve ser preenchido quando clicado e a receita ser adicionada à lista de receitas favoritas do localStorage e deve aparecer no perfil do usuário em "Receitas favoritas".
-3. [ ] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
+3. [x] O botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard.
 
 </details>
 

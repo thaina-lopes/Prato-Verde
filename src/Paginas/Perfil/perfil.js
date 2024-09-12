@@ -11,6 +11,7 @@ export default function Perfil() {
   const navigate = useNavigate();
   const [usuario, setUsuario] = useState("");
   const [favoritas, setFavoritas] = useState([]);
+  const [copiado, setCopiado] = useState(null);
 
   const voltarClick = () => {
     navigate("/home");
@@ -51,6 +52,19 @@ export default function Perfil() {
     localStorage.setItem("favoritas", JSON.stringify(favoritasIds));
   };
 
+  const handleRecipeClick = (id) => {
+    navigate(`/receitas/${id}`);
+  };
+
+  // Função para copiar o link da receita
+  const copiarLinkReceita = (id) => {
+    const link = `${window.location.origin}/receitas/${id}`; // Monta o link completo da receita
+    navigator.clipboard.writeText(link).then(() => {
+      setCopiado(id); // Marca que o link foi copiado para esta receita
+      setTimeout(() => setCopiado(null), 3000); // Remove o estado de copiado após 3 seg
+    });
+  };
+
   return (
     <div className={styles.perfil}>
       <button className={styles.voltar} onClick={voltarClick}>
@@ -65,7 +79,11 @@ export default function Perfil() {
       <h3 className={styles.receitasTitulo}>Receitas favoritas</h3>
       <div className={styles.cardContainer}>
         {favoritas.map((receita) => (
-          <div key={receita.id} className={styles.receitaFavorita}>
+          <div
+            key={receita.id}
+            className={styles.receitaFavorita}
+            onClick={() => handleRecipeClick(receita.id)}
+          >
             {/* Renderize os detalhes da receita aqui */}
             <img
               src={receita.link_imagem}
@@ -77,10 +95,21 @@ export default function Perfil() {
               {/* ... outros detalhes */}
               <div className={styles.icones}>
                 <MdFavorite
-                  onClick={() => removerFavorita(receita.id)}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Impede o clique de ir para a receita
+                    removerFavorita(receita.id);
+                  }}
                   className={styles.iconeFavorito}
                 />
-                <IoIosShareAlt />
+                <IoIosShareAlt
+                  onClick={(e) => {
+                    e.stopPropagation(); // Impede o clique de ir para a receita
+                    copiarLinkReceita(receita.id);
+                  }}
+                  className={`${styles.iconeCompartilhar} ${
+                    copiado === receita.id ? styles.iconeCopiado : ""
+                  }`}
+                />
               </div>
             </div>
           </div>
