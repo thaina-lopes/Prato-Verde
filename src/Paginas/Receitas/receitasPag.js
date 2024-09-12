@@ -53,7 +53,7 @@ export default function ReceitasPag() {
       .writeText(url) // copia a URL
       .then(() => {
         setLinkCopiado(true); // Mostra a mensagem de link copiado
-        setTimeout(() => setLinkCopiado(false), 3000); // Esconde a mensagem após 3 seg
+        setTimeout(() => setLinkCopiado(false), 2000); // Esconde a mensagem após 2 seg
       })
       .catch((err) => console.error("Falha ao copiar o link:", err));
   };
