@@ -11,6 +11,7 @@ export default function ReceitasPag() {
   const navigate = useNavigate();
   const [receita, setReceita] = useState(null);
   const [favorito, setFavorito] = useState(false);
+  const [linkCopiado, setLinkCopiado] = useState(false);
 
   const voltarClick = () => {
     navigate("/home");
@@ -46,6 +47,17 @@ export default function ReceitasPag() {
     }
   };
 
+  const handleShareClick = () => {
+    const url = window.location.href; // URL atual da página
+    navigator.clipboard
+      .writeText(url) // copia a URL
+      .then(() => {
+        setLinkCopiado(true); // Mostra a mensagem de link copiado
+        setTimeout(() => setLinkCopiado(false), 3000); // Esconde a mensagem após 3 seg
+      })
+      .catch((err) => console.error("Falha ao copiar o link:", err));
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.containerBotao}>
@@ -66,9 +78,16 @@ export default function ReceitasPag() {
           >
             {favorito ? <MdFavorite /> : <MdFavoriteBorder />}
           </button>
-          <IoIosShareAlt />
+          <button
+            onClick={handleShareClick}
+            className={styles.botaoCompartilhar}
+          >
+            <IoIosShareAlt />
+          </button>
         </div>
       </div>
+      {linkCopiado && <p className={styles.linkCopiado}>Link copiado</p>}{" "}
+      {/* Mensagem de link copiado */}
       <h2 className={styles.titulo}>{receita.receita}</h2>
       <h4 className={styles.subTitulo}>Ingredientes:</h4>
       <ul className={styles.descricao}>
