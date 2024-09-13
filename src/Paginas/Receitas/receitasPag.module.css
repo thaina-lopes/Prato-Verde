@@ -76,3 +76,6 @@
   font-family: "Raleway";
   line-height: 1.5;
 }
+.Toastify__toast-container {
+  width: 200px; /* Define a largura do contêiner onde os toasts aparecem */
+}
