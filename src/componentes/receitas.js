@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-
-import styles from "./receitas.module.css";
 import { Link } from "react-router-dom";
 
+import styles from "./receitas.module.css";
+import Categorias from "./categorias";
+
 export default function Receitas() {
-  const [receitas, setReceitas] = useState([]);
+  const [receitas, setReceitas] = useState([]); // Estado para armazenar todas as receitas
+  const [tipoSelecionado, setTipoSelecionado] = useState("todas"); // Estado para armazenar a categoria selecionada
 
   useEffect(() => {
     // Fazendo uma requisição GET para listar as receitas
@@ -14,10 +16,17 @@ export default function Receitas() {
       .catch((error) => console.error("Erro ao buscar receitas:", error));
   }, []);
 
+  // Função para filtrar as receitas com base no tipo selecionado
+  const receitasFiltradas =
+    tipoSelecionado === "todas"
+      ? receitas
+      : receitas.filter((receita) => receita.tipo === tipoSelecionado);
+
   return (
     <div className={styles.container}>
+      <Categorias onCategoriaClick={setTipoSelecionado} />
       <div className={styles.receitasContainer}>
-        {receitas.map((receita) => (
+        {receitasFiltradas.map((receita) => (
           <Link
             to={`/receitas/${receita.id}`}
             key={receita.id}
