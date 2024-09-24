@@ -3,7 +3,8 @@ import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import { IoIosShareAlt } from "react-icons/io";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import styles from "../Receitas/receitasPag.module.css";
 
 export default function ReceitasPag() {
@@ -47,13 +48,33 @@ export default function ReceitasPag() {
     }
   };
 
+  const notify = () =>
+    toast.success("Link copiado com sucesso!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Slide,
+      style: {
+        maxWidth: "400px", // Define a largura máxima
+        width: "100%", // Define a largura (pode ser uma largura fixa ou percentual)
+        height: "20px", // Define a altura
+        fontSize: "14px", // Exemplo de ajuste de fonte
+        borderRadius: "8px", // Bordas arredondadas
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Sombra
+      },
+    });
+
   const handleShareClick = () => {
     const url = window.location.href; // URL atual da página
     navigator.clipboard
       .writeText(url) // copia a URL
       .then(() => {
-        setLinkCopiado(true); // Mostra a mensagem de link copiado
-        setTimeout(() => setLinkCopiado(false), 3000); // Esconde a mensagem após 3 seg
+        notify();
       })
       .catch((err) => console.error("Falha ao copiar o link:", err));
   };
@@ -84,10 +105,10 @@ export default function ReceitasPag() {
           >
             <IoIosShareAlt />
           </button>
+          <ToastContainer />
         </div>
       </div>
-      {linkCopiado && <p className={styles.linkCopiado}>Link copiado</p>}{" "}
-      {/* Mensagem de link copiado */}
+
       <h2 className={styles.titulo}>{receita.receita}</h2>
       <h4 className={styles.subTitulo}>Ingredientes:</h4>
       <ul className={styles.descricao}>

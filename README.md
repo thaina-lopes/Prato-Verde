@@ -37,11 +37,11 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 2. [x] Redirecionar o usuário para a tela correta ao clicar em cada ícone no menu.
 3. [x] Implementar os botões de categoria para serem utilizados como filtro.
 4. [x] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
-5. [ ] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
-6. [ ] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
+5. [x] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
+6. [x] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
 7. [x] Desenvolver o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la.
-8. [ ] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
-9. [ ] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
+8. [x] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
+9. [x] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
    
 </details>
 <details>
