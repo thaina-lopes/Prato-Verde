@@ -10,7 +10,7 @@
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .cardLink {
   text-decoration: none;

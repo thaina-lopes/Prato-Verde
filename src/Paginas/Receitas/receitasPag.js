@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "../Receitas/receitasPag.module.css";
+import { doc, getDoc } from "firebase/firestore"; // Importe getDoc e doc do Firestore
+import { db } from "../../firebase"; // Ajuste o caminho conforme necessário
 
 export default function ReceitasPag() {
   const { id } = useParams();
@@ -19,19 +21,27 @@ export default function ReceitasPag() {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3001/receitas/${id}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setReceita(data);
+    const fetchRecipe = async () => {
+      const docRef = doc(db, "receitas", id); // Acesse o documento usando o ID
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        setReceita(docSnap.data());
         const favoritos = JSON.parse(localStorage.getItem("favoritas")) || [];
         setFavorito(favoritos.some((favId) => favId === id));
-      })
-      .catch((error) => console.error("Erro ao buscar a receita:", error));
+      } else {
+        console.log("No such document!");
+      }
+    };
+
+    fetchRecipe().catch((error) =>
+      console.error("Erro ao buscar a receita:", error)
+    );
   }, [id]);
 
   if (!receita) return <div>Carregando...</div>;
 
-  const ingredientesLista = receita.ingredientes.split(",");
+  const ingredientesLista = receita.ingredientes;
 
   const handleFavoriteClick = () => {
     setFavorito(!favorito);
@@ -87,8 +97,8 @@ export default function ReceitasPag() {
         </button>
       </div>
       <img
-        src={receita.link_imagem}
-        alt={receita.receita}
+        src={receita.imagem}
+        alt={receita.titulo}
         className={styles.imagem}
       />
       <div className={styles.iconesContainer}>
@@ -109,7 +119,7 @@ export default function ReceitasPag() {
         </div>
       </div>
 
-      <h2 className={styles.titulo}>{receita.receita}</h2>
+      <h2 className={styles.titulo}>{receita.titulo}</h2>
       <h4 className={styles.subTitulo}>Ingredientes:</h4>
       <ul className={styles.descricao}>
         {ingredientesLista.map((ingrediente, index) => (

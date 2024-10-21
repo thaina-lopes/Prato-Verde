@@ -24,20 +24,14 @@ export default function Header() {
         </div>
         <div className={styles.menuItem}>
           <div className={styles.containerBusca}>
-            <button
-              onClick={aoClicar}
-              className={styles.iconeBusca}
-              aria-label="Buscar"
-            >
+            <button className={styles.iconeBusca} aria-label="Buscar">
               <IoIosSearch aria-hidden="true" />
             </button>
-            {expandido && (
-              <input
-                type="text"
-                className={styles.inputBusca}
-                placeholder="Buscar receitas..."
-              />
-            )}
+            <input
+              type="text"
+              className={styles.inputBusca}
+              placeholder="Buscar receitas..."
+            />
           </div>
         </div>
       </nav>
