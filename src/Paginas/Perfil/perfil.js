@@ -2,6 +2,8 @@ import { IoIosArrowDropleft, IoIosShareAlt } from "react-icons/io";
 import { RxExit } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import { db } from "../../firebase";
+import { collection, getDocs, doc, getDoc } from "firebase/firestore";
 
 import styles from "../Perfil/perfil.module.css";
 import avatar from "../../imagens/profile.png";
@@ -35,8 +37,10 @@ export default function Perfil() {
     const fetchFavorites = async () => {
       const fetchedFavorites = await Promise.all(
         favoritesIds.map(async (id) => {
-          const response = await fetch(`http://localhost:3001/receitas/${id}`);
-          return response.json();
+          const receitaRef = doc(db, "receitas", id); // Referência para o documento
+          const receitaSnap = await getDoc(receitaRef); // Obtém o documento
+
+          return { id: receitaSnap.id, ...receitaSnap.data() }; // Retorna os dados
         })
       );
       setFavoritas(fetchedFavorites);
@@ -86,12 +90,12 @@ export default function Perfil() {
           >
             {/* Renderize os detalhes da receita aqui */}
             <img
-              src={receita.link_imagem}
-              alt={receita.receita}
+              src={receita.imagem}
+              alt={receita.titulo}
               className={styles.imagem}
             />
             <div className={styles.containerTitulo}>
-              <h4 className={styles.titulo}>{receita.receita}</h4>
+              <h4 className={styles.titulo}>{receita.titulo}</h4>
               {/* ... outros detalhes */}
               <div className={styles.icones}>
                 <MdFavorite
