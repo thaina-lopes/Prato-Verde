@@ -10,10 +10,10 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 
 ## :hammer: Funcionalidades
 
-- Buscar receitas por ingrediente, nome ou primeira letra;
+- Buscar receitas;
 - Acessar os detalhes de cada receita, com ingredientes e instruções;
 - Favoritar e desfavoritar receitas;
-- Compartilhar receitas nas redes sociais;
+- Compartilhar receitas;
 - Acessar o perfil do usuário com as receitas favoritas;
 
 ## :memo: Etapas do projeto

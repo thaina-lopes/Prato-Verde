@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("/./src/imagens/back-.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .receitasContainer {
   padding: 10px 20px;

@@ -3,8 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 35px;
+  background-image: url("/./src/imagens/back-.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .containerBotao {
   position: absolute;
@@ -19,8 +21,8 @@
   cursor: pointer;
 }
 .imagem {
-  width: 270px;
-  height: 180px;
+  width: 340px;
+  height: 220px;
   object-fit: cover;
   text-align: center;
   border-radius: 3px;
@@ -28,8 +30,7 @@
 .iconesContainer {
   display: flex;
   margin-top: 20px;
-  align-self: flex-end;
-  margin-right: 10%;
+  margin-left: 30%;
 }
 .icones {
   display: flex;
@@ -75,6 +76,7 @@
   color: var(--oliva);
   font-family: "Raleway";
   line-height: 1.5;
+  max-width: 700px;
 }
 .Toastify__toast-container {
   width: 200px; /* Define a largura do contêiner onde os toasts aparecem */
