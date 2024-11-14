@@ -9,11 +9,17 @@ export default function Header() {
       <nav className={styles.menuContainer}>
         <div className={styles.menuItem}>
           <a href="/perfil" aria-label="Ir para o perfil">
-            <RxAvatar size={22} aria-hidden="true" />
+            <RxAvatar
+              size={28}
+              aria-hidden="true"
+              style={{
+                filter: "drop-shadow(2px 2px 5px rgba(255, 255, 255, 1))",
+              }}
+            />
           </a>
         </div>
         <div className={styles.menuItem}>
-          <a>Prato Verde</a>
+          <a>PRATO VERDE</a>
         </div>
         <div className={styles.menuItem}></div>
       </nav>

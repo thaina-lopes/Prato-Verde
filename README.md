@@ -6,14 +6,13 @@
 
 ### App de receitas veganas :fork_and_knife::herb:
 
-O objetivo do projeto é criar um app de receitas onde é possível ver, buscar, favoritar e compartilhar receitas. O layout vai ter como foco inical dispositivos móveis, sendo posteriormente adaptado para desktop.
+O objetivo do projeto é criar um app de receitas onde é possível ver, filtrar, favoritar e compartilhar receitas. O layout vai ter como foco inical dispositivos móveis, sendo posteriormente adaptado para desktop.
 
 ## :hammer: Funcionalidades
 
-- Buscar receitas;
+- Filtrar receitas por categorias;
 - Acessar os detalhes de cada receita, com ingredientes e instruções;
-- Favoritar e desfavoritar receitas;
-- Compartilhar receitas;
+- Favoritar, desfavoritar e compartilhar receitas;
 - Acessar o perfil do usuário com as receitas favoritas;
 
 ## :memo: Etapas do projeto
@@ -27,28 +26,25 @@ O objetivo do projeto é criar um app de receitas onde é possível ver, buscar,
 2. [x] O botão do formulário só deve ser habilitado após um nome de usuário e uma senha com 6 caracteres ou mais serem preenchidos.
 3. [x] Após a submissão do formulário, salvar no localStorage o nome do usuário na chave `user`.
 4. [x] Redirecionar o usuário para a tela principal de receitas após a submissão e validação com sucesso do login.
-5. [x] Implementar responsividade do login.
 
 </details>
 <details>
   <summary> <b>Tela principal de receitas</b> </summary>
   
-1. [x] Implementar o header posicionando-o de forma fixa e contendo os ícones de menu.
-2. [x] Redirecionar o usuário para a tela correta ao clicar em cada ícone no menu.
+1. [x] Implementar o header contendo os ícones de menu.
+2. [x] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
 3. [x] Implementar os botões de categoria para serem utilizados como filtro.
-4. [x] Redirecionar o usuário para a tela de perfil ao clicar no botão de perfil.
-5. [x] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
-6. [x] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
-7. [x] Desenvolver o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la.
-8. [x] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
-9. [x] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
+4. [x] Implementar o filtro das receitas por meio da API ao clicar no filtro de categoria.
+5. [x] Implementar o filtro como um toggle, o qual se for selecionado novamente, o app deve retornar as receitas sem nenhum filtro.
+6. [x] Redirecionar o usuário ao clicar no card da receita, para a tela de detalhes, que deve mudar a rota e conter o id da receita na URL.
+7. [x] Realizar uma request para a API passando o id da receita que deve estar disponível nos parâmetros da URL.
    
 </details>
 <details>
 <summary> <b>Tela de perfil do usuário</b> </summary>
   
 1. [x] Possuir o nome do usuário digitado no login.
-2. [x] Implementar 2 botões: um de "Início" e um de "Sair".
+2. [x] Implementar 2 botões: um de "Voltar" e um de "Sair".
 3. [x] Ao clicar no botão de "Voltar", a rota deve mudar para a tela de início.
 4. [x] Ao clicar no botão de "Sair", o localStorage deve ser limpo e a rota deve mudar para a tela de login.
 5. [x] Mostrar "Receitas favoritas" e os cards de cada receita, com o botão de "favorito" preenchido e um botão de compartilhar.

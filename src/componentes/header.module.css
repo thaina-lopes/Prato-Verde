@@ -1,10 +1,13 @@
 .headerContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
+  height: 180px;
   padding: 10px 20px;
-  background-color: var(--verdinho);
+  background-image: url(/src/imagens/banner.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 1000;
   box-sizing: border-box;
 }
@@ -17,7 +20,8 @@
 .menuItem a {
   text-decoration: none;
   color: var(--oliva);
-  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+  font-size: 30px;
   display: flex;
   align-items: center;
 }
@@ -28,36 +32,11 @@
   position: relative;
 }
 
-.iconeBusca {
-  position: absolute;
-  color: var(--oliva);
-  top: 50%;
-  right: 0px; /* Ajuste conforme necessário */
-  transform: translateY(-50%);
-  border: none;
-  background: none;
-  cursor: pointer;
-  z-index: 1;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.inputBusca {
-  padding-right: 30px; /* Espaço para o botão */
-  height: 18px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  opacity: 0;
-  padding-left: 5px;
-  pointer-events: none; /* Desativa interação inicialmente */
-  overflow: hidden;
-}
-.inputBusca:focus,
-.containerBusca .inputBusca {
-  width: 110px;
-  height: 18px;
-  padding-left: 5px;
-  opacity: 1;
-  pointer-events: all; /* Ativa interação quando o input estiver visível */
+@media (max-width: 400px) {
+  .headerContainer {
+    height: 100px;
+  }
+  .menuItem a {
+    font-size: 25px;
+  }
 }
