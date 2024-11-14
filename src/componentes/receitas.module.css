@@ -48,3 +48,13 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 400px) {
+  .receitasContainer {
+    padding: 10px 10px;
+  }
+  .card {
+    width: 145px;
+    height: 140px;
+  }
+}
