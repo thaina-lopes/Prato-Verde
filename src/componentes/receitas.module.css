@@ -55,4 +55,8 @@
     width: 145px;
     height: 140px;
   }
+  .receitasContainer {
+    padding: 10px;
+    gap: 10px;
+  }
 }
