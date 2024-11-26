@@ -71,6 +71,13 @@
   margin: 5px 0 0 0;
   font-family: "Raleway";
 }
+.ingredientes {
+  font-size: 16px;
+  color: var(--oliva);
+  font-family: "Raleway";
+  line-height: 1.5;
+  max-width: 700px;
+}
 .descricao {
   font-size: 16px;
   color: var(--oliva);
@@ -80,4 +87,33 @@
 }
 .Toastify__toast-container {
   width: 200px; /* Define a largura do contêiner onde os toasts aparecem */
+}
+
+@media (max-width: 500px) {
+  .containerBotao {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
+  .container {
+    padding: 45px 15px 10px 15px;
+  }
+  .imagem {
+    width: 100%;
+  }
+  .iconesContainer {
+    display: flex;
+    margin-left: 7%;
+    align-items: center;
+  }
+  .icones {
+    display: flex;
+    gap: 10px;
+  }
+  .ingredientes {
+    padding-right: 20px;
+  }
+  .descricao {
+    padding: 0 15px;
+  }
 }

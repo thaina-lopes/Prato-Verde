@@ -93,7 +93,7 @@ export default function ReceitasPag() {
     <div className={styles.container}>
       <div className={styles.containerBotao}>
         <button className={styles.voltar} onClick={voltarClick}>
-          <IoIosArrowDropleft size={24} />
+          <IoIosArrowDropleft size={26} />
         </button>
       </div>
       <img
@@ -121,7 +121,7 @@ export default function ReceitasPag() {
 
       <h2 className={styles.titulo}>{receita.titulo}</h2>
       <h4 className={styles.subTitulo}>Ingredientes:</h4>
-      <ul className={styles.descricao}>
+      <ul className={styles.ingredientes}>
         {ingredientesLista.map((ingrediente, index) => (
           <li key={index}>{ingrediente.trim()}</li>
         ))}
