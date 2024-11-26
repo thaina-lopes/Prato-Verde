@@ -1,7 +1,6 @@
 import { RxAvatar } from "react-icons/rx";
-
+import logo from "../imagens/cogumelo.png";
 import styles from "../componentes/header.module.css";
-import BuscarReceita from "./busca";
 
 export default function Header() {
   return (
@@ -19,7 +18,10 @@ export default function Header() {
           </a>
         </div>
         <div className={styles.menuItem}>
-          <a>PRATO VERDE</a>
+          <div className={styles.caixa}>
+            <img src={logo} alt="Logo de um cogumelo" className={styles.logo} />
+            <a>PRATO VERDE</a>
+          </div>
         </div>
         <div className={styles.menuItem}></div>
       </nav>
