@@ -90,6 +90,7 @@
 }
 
 @media (max-width: 500px) {
+  /* Estilos para quando a largura da tela for igual ou menor que 500px */
   .containerBotao {
     position: absolute;
     left: 15px;

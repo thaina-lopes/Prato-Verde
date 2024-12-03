@@ -8,8 +8,8 @@
   background-size: cover;
 }
 .receitasContainer {
-  padding: 10px 20px;
-  gap: 10px 15px;
+  padding: 10px;
+  gap: 10px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -27,7 +27,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
   margin: 5%;
-  width: 150px;
+  width: 145px;
   height: 140px;
   border: 1px solid #ddd;
   text-align: center;
@@ -50,13 +50,14 @@
   align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
+  /* Estilos para quando a largura da tela for igual ou maior que 500px */
   .card {
-    width: 145px;
-    height: 140px;
+    width: 190px;
+    height: 160px;
   }
   .receitasContainer {
-    padding: 10px;
-    gap: 10px;
+    padding: 10px 20px;
+    gap: 10px 15px;
   }
 }

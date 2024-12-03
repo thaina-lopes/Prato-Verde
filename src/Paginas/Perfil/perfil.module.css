@@ -1,5 +1,5 @@
 .perfil {
-  padding: 10px 20px;
+  padding: 10px;
 }
 .voltar {
   border: none;
@@ -30,6 +30,8 @@
   font-weight: 300;
 }
 .cardContainer {
+  padding: 10px;
+  gap: 5px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -41,7 +43,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
   margin: 2% 1%;
-  width: 145px;
+  width: 130px;
   height: 160px;
   border: 1px solid #ddd;
   padding-bottom: 4px;
@@ -99,4 +101,11 @@
   font-family: "Raleway";
   color: var(--oliva);
   cursor: pointer;
+}
+@media (min-width: 600px) {
+  /* Estilos para quando a largura da tela for igual ou maior que 500px */
+  .receitaFavorita {
+    width: 180px;
+    height: 160px;
+  }
 }
