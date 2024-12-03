@@ -25,9 +25,11 @@
   height: 26px;
 }
 .receitasTitulo {
+  color: var(--oliva);
   font-size: 18px;
   font-family: "Raleway";
-  font-weight: 300;
+  font-weight: 400;
+  text-align: center;
 }
 .cardContainer {
   padding: 10px;
@@ -107,5 +109,8 @@
   .receitaFavorita {
     width: 180px;
     height: 160px;
+  }
+  .receitasTitulo {
+    font-size: 22px;
   }
 }
